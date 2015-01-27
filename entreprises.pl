@@ -32,7 +32,6 @@ $file_handle->print("	<meta http-equiv=\"Content-Type\" content=\"text/html; cha
 $file_handle->print("	<meta http-equiv=\"Content-Language\" content=\"fr\" />");
 $file_handle->print("	<meta name=\"description\" content=\"Page présentant les entreprises.\" />");
 $file_handle->print("	<meta name=\"keywords\" content=\"Entreprises\" />");
-$file_handle->print("	<link rel=\"stylesheet\" type=\"text/css\" href=\"parcour.css\">");
 $file_handle->print("</head><body>");
 $file_handle->print("<div class=\"contenu\">");
 $file_handle->print("<div class=\"colonne\">");
