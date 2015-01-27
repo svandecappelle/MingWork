@@ -32,7 +32,7 @@ $file_handle->print("	<meta http-equiv=\"Content-Type\" content=\"text/html; cha
 $file_handle->print("	<meta http-equiv=\"Content-Language\" content=\"fr\" />");
 $file_handle->print("	<meta name=\"description\" content=\"Page présentant les annuaires des diplômés des formations de l'université Charles de Gaulle.\" />");
 $file_handle->print("	<meta name=\"keywords\" content=\"Annuaires Lille 3\" />");
-$file_handle->print("	<link rel=\"stylesheet\" type=\"text/css\" href=\"parcour.css\">");
+$file_handle->print("	<link rel=\"stylesheet\" type=\"text/css\" href=\"parcours.css\">");
 $file_handle->print("</head><body>");
 $file_handle->print("<div class=\"contenu\">");
 $file_handle->print("<div class=\"colonne\">");
@@ -45,8 +45,11 @@ foreach my $line (@list1){
     	my @pers_line = split(/{PERSONNE}/, $line);
     	my @infos_pers = split(/,/, $pers_line[1]);
     	# print "Chez " . $infos_pers[0] . "\n";
-    	$file_handle->print("<li><a class=\"interne\" href=\"#\" >".$infos_pers[0]."</a><span class=\"STYLE1\">" . $infos_pers[1] . "" . $infos_pers[2] . "</li>\n");
-    	$file_handle->print("<p>Expériences\ professionnelles<\/p>");
+    	if ($line_num > 0) {
+    		$file_handle->print("\n</li>");
+    	}
+    	$file_handle->print("<li class=\"personne\"><div class=\"name\"><a class=\"interne\" href=\"#\" >".$infos_pers[0]."</a><span class=\"formation\">" . $infos_pers[1] . "" . $infos_pers[2] . "</span></div>\n");
+    	$file_handle->print("<h2>Expériences\ professionnelles<\/h2>");
     }elsif ($line=~/{EXPERIENCE}/){
 		
  		my @fields = split(/,/, $line);
@@ -73,28 +76,28 @@ foreach my $line (@list1){
 		        # 12: Date Debut
 		        # 13: Date fin
 
-		        my $intitule = "CONTENU</span></p>";
-				my $unk = "<p>CONTENU</p>";
-		        my $entreprise = "<div><strong>CONTENU: </strong>";
+		        my $intitule = "CONTENU</span></div>";
+				my $unk = "<div class=\"sous-intitule\">CONTENU</div>";
+		        my $entreprise = "<div><div class=\"entreprise\">CONTENU: </strong>";
 		        my $site = "<a href=\"CONTENU\">CONTENU</a></div>";
-		        my $formation = "<p><span class=\"formation\">CONTENU</span></p>";
+		        my $formation = "<div class=\"formation-entreprise\">CONTENU</div>";
 		        #my $promotion = "<p><span class=\"promotion\">CONTENU</span></p>";
 		        #my $secteur = "<p><strong>CONTENU</strong></div>";
-		        my $unk2 = "<p>CONTENU</p>";
+		        my $unk2 = "<div>CONTENU</div>";
 		        my $ville = "<div><span>CONTENU</span>";
 		        my $cp = "<span>CONTENU</span>";
 		        my $dep = "<span>CONTENU</span></div>";
-		        my $unk3 = "<p>CONTENU</p>";
+		        my $unk3 = "<div>CONTENU</div>";
 		        my $type = "<div><span>CONTENU</span></div>";
 		        my $contrat = "<div>CONTENU</div>";
-		        my $deb = "<div><span>Date de début: </span><span>CONTENU</span></div>";
-		        my $fin = "<div><span>Date de fin: </span><span>CONTENU</span></div>";
+		        my $deb = "<div><span class=\"date\">Date de début: </span><span>CONTENU</span></div>";
+		        my $fin = "<div><span class=\"date\">Date de fin: </span><span>CONTENU</span></div>";
 
 
 		        my @pattern = ($intitule, $unk, $entreprise, $site, $formation, $unk2, $ville, $cp, $dep, $unk3, $type, $contrat, $deb, $fin);
 				my @name = ("intitule", "unk", "entreprise", "site", "formation", "unk2", "ville", "cp", "dep", "unk3", "type", "contrat", "deb", "fin");
 					
-				$fields_words =~ s/{EXPERIENCE}/<p><span class=\"petitetiquette\">/g;
+				$fields_words =~ s/{EXPERIENCE}/<div class=\"experience\"><span class=\"poste\">/g;
 				my $html = @pattern[$field_id];
 		        
 		        if ($fields_words ne "-"){
@@ -113,12 +116,14 @@ foreach my $line (@list1){
     	}
     	
     }else{
-		$file_handle->print("<div>" . $line . "</div>\n");
+		$file_handle->print("<div class=\"explication\">" . $line . "</div>\n");
     }
 
     $line_num++;
 
 }
+$file_handle->print("\n</li>");
+
 $file_handle->print("</ul>");
 $file_handle->print("</div>");
 $file_handle->print("<hr/>");

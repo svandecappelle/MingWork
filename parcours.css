@@ -1,0 +1,91 @@
+body {
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0em;
+}
+
+h1 {
+  font-weight:bold;
+  font-variant: small-caps;
+  font-size: 150%;
+  margin: 0em;
+}
+
+
+h2 {
+  margin: 0em;
+  font-weight:bold;
+  font-variant: small-caps;
+  font-size: 120%;
+}
+
+
+ul {
+  list-style-type:none
+}
+
+li.personne{
+  margin: 1em;
+  padding: 2em 3em 2em 2em;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #333;
+  background-color: #CCCCCC;
+}
+
+.poste{
+  font-weight: bold;
+}
+
+.personne .name{
+  padding: 10px;
+  background-color: #9999FF;
+  border-radius: 10px;
+}
+
+.personne .name a{
+  font-weight: bold;
+  color: #000000;
+}
+
+.personne .name span{
+  margin-left: 10px;
+  color: #BCBCBC;
+}
+
+.formation-entreprise{
+  width: 100%;
+}
+
+.entreprise{
+  border-top: 1px solid black;
+  font-weight: bold;
+}
+
+span.etiquette, span.petitetiquette {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin: 1px;
+  color: #000; background-color: #ffff99; border-color: #000;
+}
+
+.date{
+  font-style: italic;
+  font-weight: bold;
+}
+
+.explication{
+  margin-left: 10px;
+}
+
+.experience{
+  border-top: 1px solid black;
+  margin-top: 20px;
+  background-color: #BEBEBE;
+}
+
+.sous-intitule{
+  background-color: #BEBEBE;
+}
