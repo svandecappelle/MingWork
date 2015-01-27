@@ -1,0 +1,599 @@
+body {
+
+  color: #000000;
+  background-color: #FFFFFF;
+  margin: 0em;
+}
+
+h1 {
+
+  font-weight:bold;
+  font-variant: small-caps;
+  font-size: 150%;
+  margin: 0em;
+}
+
+
+h2 {
+  margin: 0em;
+  font-weight:bold;
+  font-variant: small-caps;
+  font-size: 120%;
+}
+
+div.chapeau {
+
+  margin: 0em;
+  padding: 0em;
+
+}
+
+div.introduction { 
+
+  margin: 1em 2em 1em 2em;
+  font-size: 110%;
+  font-weight: bold;
+  text-align: justify;
+}
+
+
+img.identite {
+
+  border: solid 3px #000000;
+
+  float: right;
+  margin: 1em;
+  width: 8em;
+
+}
+img.trombi {
+
+  border: solid 3px #000000;
+  width: 7em;
+  margin: 0em;
+}
+
+table { 
+  margin: 0em;
+  padding: 0em;
+}
+
+div.contenu {
+
+  margin: 0em;
+  padding: 0em;
+
+}
+
+p.description {
+
+  margin: 1em 0em 1em 0em;
+
+}
+
+p.annees { 
+
+  margin: 1em 3em 3em 3em;
+}
+
+img { 
+  border: 0;
+  vertical-align: middle;
+}
+
+
+
+hr {
+
+  clear: both;
+  visibility: hidden;
+
+}
+
+a:link {
+
+  color: #000000;
+  background-color: inherit;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+
+}
+
+/* parcours */
+
+span.parcours { 
+  font-variant: small-caps;
+}
+
+
+form, a.action, div.logos, div.pied, div.navigation, div.navigations { 
+  visibility: hidden;
+  width: 0pt;
+  height: 0pt;
+}
+
+body {
+
+  color: #000000;
+  background-color: #EEEEEE;
+  margin: 1em 2em 2em 2em;
+
+}
+
+
+
+h1, h2, h3 {
+  color: #444444; /* #FF4901; */
+  background-color: inherit;
+}
+
+
+
+h1 {
+
+  font-weight:bold;
+  font-variant: small-caps;
+  font-size: 200%;
+  margin-top: 0;
+}
+
+h2 { 
+  font-weight:bold;
+  font-variant: small-caps;
+  font-size: 120%;
+  margin: 0em 0em 1em 0em;
+}
+
+
+h3 { 
+
+  background-color: #DDDDDD;
+
+  margin: 2em -1em 1em -1em;
+  font-weight:bold;
+  font-variant: small-caps;
+  font-size: 100%;
+
+  padding: 1px 1em 4px 1em;
+}
+
+
+
+span.personne { 
+  font-variant: small-caps;
+}
+
+div.chapeau {
+  margin: 0em 1em 1em 18%;
+  padding: 1em;
+}
+
+div.introduction, div.alert { 
+  padding: 1em;
+  margin: 1em 35% 2em 15%;
+  width: 50%;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+div.introduction { 
+  border: solid 1px #000000;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+div.alert {
+    text-align: center;
+    color: #F00;
+}
+
+img.identite {
+
+  border: solid 1px #000000;
+  border-radius: 7px;
+
+  float: right;
+  margin: 1em;
+  width: 8em;
+
+
+}
+img.moment {
+  margin: 0em 1em 1em 1em;
+  width: 6em;
+  border-radius: 6px;
+}
+img.trombi {
+  border: solid 1px #000000;
+  border-radius: 8px;
+  height: 12em;
+  margin: 3em 0em 1em 0em;
+}
+
+
+div.moment {
+
+  float: right;
+
+  text-align: center;
+
+  width: 12em;
+
+  color: #333333;
+  background-color: #FFFFFF;
+  margin: 5em 3em 4em 5em;
+  padding: 1em 0em 1em 0em;
+
+  border: solid 1px #000000;
+  border-radius: 8px;
+}
+
+
+div.contenu, div.contenuparrainage, div.contenupromotion {
+
+  margin: 1em;
+  padding: 2em 3em 2em 2em;
+
+  border: solid 1px #000000;
+  border-radius: 10px;
+
+  color: #333333;
+
+  background-color: #FFFFFF;
+
+
+}
+
+div.contenupromotion {
+
+  margin-right: 350px;
+
+}
+
+
+div.contenuparrainage {
+
+  width: 350px;
+  margin: 0em;
+  float: right;
+  font-size: 90%;
+
+
+}
+
+
+div.description {
+
+  margin: 1em 2em 0em 3em;
+  text-align: justify;
+
+}
+
+div.description br {
+
+/*  margin-top: 2em;*/
+
+}
+
+p.annees { 
+
+  margin: 1em 5em 3em 2em;
+}
+
+img { 
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+div.pied {
+
+  margin-top: -0.5em;
+  padding: 0em 2em 1em 2em;
+  font-size: 70%;
+
+}
+
+div.logos { 
+    float: right;
+}
+
+
+hr {
+  clear: both;
+  visibility: hidden;
+  margin: 0;
+}
+
+
+
+/* Les liens et boutons actions */
+
+.action, .action:link, .action:visited {
+  color: #FFFFFF;
+  background-color: #333333;
+  border: outset 2px #000000;
+  border-radius: 3px;
+  padding: 0px 2px 0px 2px;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 80%;
+  text-decoration: none;
+}
+.action:hover {
+  color: #FFFFFF;
+  background-color: #666666;
+}
+.action:active {
+  color: #CCCCCC;
+  border: inset 2px #000000;
+  background-color: #333333;
+}
+
+
+/* Liens internes à l'annuaire */
+
+a.interne:link, a.interne:visited, a.interne:hover, a.interne:active {
+  color: #00F;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+a.interne:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Liens externes à l'annuaire */
+
+a.externe:link, a.externe:visited, a.externe:hover, a.externe:active {
+  color: #00F;;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+
+a.externe:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Les listes */
+
+ul {
+ list-style-image: url(../images/plus.png);
+}
+
+div.navigation ul {
+ list-style-image: none;
+ margin-top: 0.4em;
+ margin-bottom: 0;
+}
+
+div.navigation ul li {
+  margin-left: -2em;
+}
+
+
+ul.results { 
+  margin-bottom: 2em;
+}
+
+
+ul.travaux li { 
+  margin-top: 1em;
+}
+
+ul.results li { 
+  margin-top: 0em;
+}
+
+div.contenuparrainage ul li {
+  margin-left: -2em;
+}
+
+
+table.recherche { 
+  margin-bottom: 2em;
+}
+
+table.formulaire { 
+  width: 100%;
+}
+
+table.formulaire tr { 
+
+  vertical-align: baseline;
+}
+table.formulaire tr.textarea { 
+
+  vertical-align: top;
+}
+
+
+table.formulaire th { 
+
+  text-align: left;
+  padding-right: 1em;
+  white-space: nowrap;
+  
+}
+table.formulaire td { 
+  font-size: 90%;
+  padding-bottom: 1em;
+}
+
+table.formulaire td.submit { 
+  font-size: 75%;
+  text-align: right;
+  padding-top: 0em;
+}
+
+table.formulaire td.consigne { 
+  color: #B37D00;
+  background-color: inherit;
+  font-style: italic;
+  text-align: left;
+}
+
+div.colonne { 
+  float: left;
+  width: 48%;
+  margin: 0 1% 0 1%;
+}
+
+span.inutile { 
+
+  color: #999999;
+  background-color: inherit;
+  font-style: italic;
+
+}
+
+span.precision { 
+
+  color: #666666;
+  background-color: inherit;
+  font-size: 80%;
+}
+
+/* étiquettes */
+
+span.etiquette, span.petitetiquette {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin: 1px;
+	color: #000; background-color: #ffff99; border-color: #000;
+}
+
+span.etiquette {
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+span.petitetiquette {
+    font-size: 80%;
+    padding: 0 1px 0 1px;
+}
+
+span.petitetiquette span.promotion { 
+    font-size: 80%;
+}
+
+
+
+/* blocs de navigations */
+
+div.navigations {
+    width: 15%;
+    float:left; 
+    font-size: 90%;
+    margin: 1em 2em 1em 1em;
+}
+
+div.navigation {
+    border: solid 1px #000000;
+    padding: 1em;
+    margin: 0 0 1em 0;
+    border-radius: 7px;
+}
+
+p, li { 
+  text-align: justify;
+}
+
+/* le nuage de mots-clefs */
+
+div.nuage  {
+  color: #000000;
+  background-color: #FFFFFF;
+  line-height: 35px;
+  font: normal small verdana, arial, helvetica, sans-serif;
+  text-align: justify;
+  border:1px solid #000000;
+  border-radius: 10px;
+  margin: 0em 12% 3em 12%;
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+.nuage a {
+  text-decoration:none;
+  white-space: nowrap;
+}
+
+.nuage a.level1  {font-size:12px;color:#999999; background-color: inherit;}
+.nuage a.level2  {font-size:14px;color:#999999; background-color: inherit;}
+
+
+.nuage a.level3  {font-size:16px;color:#47657B; background-color: inherit;}
+.nuage a.level4  {font-size:18px;color:#47657B; background-color: inherit;}
+
+.nuage a.level5  {font-size:20px;color:#333333; background-color: inherit;}
+.nuage a.level6  {font-size:22px;color:#333333; background-color: inherit;}
+
+.nuage a.level7  {font-size:24px;color:#E76300; background-color: inherit;}
+.nuage a.level8  {font-size:26px;color:#E76300; background-color: inherit;}
+
+.nuage a.level9  {font-size:28px;color:#FF3300; background-color: inherit;}
+.nuage a.level10 {font-size:30px;color:#FF3300; background-color: inherit;}
+
+.nuage a:hover {
+  color: #000000;
+  background-color: #FF6633;
+}
+
+/* pour dérouler les description */
+
+span.action {
+  font-size: 60%;
+}
+div.bonus {
+  display: none;
+}
+
+
+
+
+span.petitetiquette {    font-size: 80%;
+    padding: 0 1px 0 1px;
+}
+span.etiquette1 {    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin: 1px;
+	color: #000; background-color: #ffff99; border-color: #000;
+}
+span.etiquette1 {    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+span.petitetiquette1 {    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    white-space: nowrap;
+    margin: 1px;
+	color: #000; background-color: #ffff99; border-color: #000;
+}
+.STYLE1 {
+	color: #660066;
+	font-style: italic;
+}
+span.petitetiquette2 {    font-size: 80%;
+    padding: 0 1px 0 1px;
+}
+span.petitetiquette2 {font-size: 80%;
+    padding: 0 1px 0 1px;
+}
